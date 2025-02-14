@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .login{
+       text-align: center;
+       margin-top: 5%;
+       input-security: auto;
+    }
+    .login button {
+        display: inline-block;
+          padding: 10px 20px;
+           margin: 10px;
+          border-radius: 5px;
+          background-color: #4CAF50;
+           color: white;
+           font-size: 16px;
+            text-align: center;
+          text-decoration: none;
+             cursor: pointer;
+               transition: background-color 0.3s ease;
+            }
+
+.login button:hover {
+background-color: #3e8e41;
+}
+      .l {
+             font-size: 24px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_pgoHuvuMGt_8ovZZra-dq4ZuQCHA3XsBRw&usqp=CAU);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 1000px;
+          }
+          .a a{
+            text-decoration: none;
+            color: white;
+          }
+</style>
+</head>
+<body>
+    <div class="l">
+        <form class="login">
+        <h2><b>Login</b></h2>
+        <br>
+        E-mail ID <input type="email" id="email" required><br><br>
+        Password <input type="password" id="pwd" required><br><br>
+        <button class="a">Submit</button>
+        </form>
+    </div>
+       <script>
+        document.querySelector('.login').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents the default form submission behavior
+    
+    // Get the values entered by the user
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('pwd').value;
+    
+    // Check if email and password are valid (you can add your validation logic here)
+    // For demonstration purposes, let's assume any email and password are valid
+    
+    // Show login success message using alert
+    alert("Login successful! Welcome, " + email);
+});
+
+       </script> 
+</body>
+</html>

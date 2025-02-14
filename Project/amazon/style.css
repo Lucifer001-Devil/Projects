@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 10px;
+    background-color: #FF9900;
+    color: white;
+    position: relative;
+}
+.ul{
+    display: flex;
+    align-items: center;
+    background-color: #110c04;
+    padding: 10px;
+}
+.ul a{
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    font-size: 13px;
+}
+.ul li:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}    
+li{
+    list-style-type: none;
+}
+li:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.dropdown{
+    gap: 0;
+}
+.select{
+    width: 40px;
+    height: 30px;
+}
+.input{
+    width: 300px;
+    height: 30px;
+}
+.lang{
+    width: 90px;
+    height: 30px;
+}
+section{
+  min-height: min-content
+}
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  } 
+  
+  /* Number text (1/3 etc) */
+
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+
+  .box{
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 1px  4px 4px black ;
+    border-radius: 0px;
+    margin: 40px;
+    text-align: center;
+    justify-content: center;
+  }
+  .shortproduct{
+    background-color: #e3dcdc;
+    display: flex;
+    justify-content: center;
+  }
+  .box2{
+    height: 345px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px  4px 4px black ;
+    border-radius: 0px;
+    margin: 0px;
+    background-color: #e3dcdc;
+    text-align: center;
+  }
+  .todaydeal{
+    margin: 12px;
+  }
+  .todayproduct{
+    display: flex;
+    margin: 10px;
+    gap: 15px;
+  }
+  .todayproduct img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+
+  }
+  .recommendation{
+    text-align: center;
+  }
+  .recommendation a{
+    text-decoration: none;
+  }
+  .recommendation button{
+    width: 100px;
+    background-color: #FF9900;
+    border: #FF9900;
+    padding: 6px;
+    font-weight: bold;
+  }
+  .recommendation button:hover{
+    background-color: #ca7f0f;
+  }
+  .home{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #e3dcdc;
+  }
+  .home:hover{
+    background-color:  #bfb8b8;
+  }
+  .home a{
+    text-decoration: none;
+    color: black;
+  }
+.link{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  background-color: #c6c2c2;
+}
+.link a{
+  text-decoration: none;
+  color: rgb(53, 51, 51);
+}
+.link a:hover{
+text-decoration: underline;
+}
+
+  
